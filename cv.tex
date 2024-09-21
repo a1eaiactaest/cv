@@ -1,0 +1,166 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% resume contents
+
+\begin{document}
+\begin{center}
+  \textbf{\Huge \scshape Piotr Rybiec} \\ \vspace{1pt}
+  \small +48 573 998 408 $|$ \href{mailto:piotrrybiec28@gmail.com}{\underline{piotrrybiec28@gmail.com}} $|$
+  \href{https://linkedin.com/in/piotrek-rybiec}{\underline{linkedin.com/in/piotrek-rybiec}} $|$
+  \href{https://github.com/a1eaiactaest}{\underline{github.com/a1eaiactaest}} $|$
+  Born: 28.10.2005
+\end{center}
+
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Java Summer Intern}{July 2024 -- September 2024}
+      {eService Sp. z o.o.}{Warsaw, Poland}
+      \resumeItemListStart
+        \resumeItem{Developed internal data-intensive REST APIs and data pipelines utilizing Java 17, Hibernate and Spring Framwork and it's derviatives.}
+        \resumeItem{Designed and developed full-stack applications in Node.js, React.js and Tailwind CSS.}
+        \resumeItem{Assesed and troubleshooted issues arising from the diversity of many different environments.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Full-stack Software Engineer}{June 2023 -- August 2023}
+      {Dopamine\&Co}{Warsaw, Poland}
+      \resumeItemListStart
+        \resumeItem{Developed a MVP for a full-stack web application, focusing on addressing fundamental user needs and providing sufficient market validation.}
+        \resumeItem{Optimized the application for scalability and applied authentication and authorization mechanisms.}
+        \resumeItem{Implemented a REST API in Django and used React.js for the frontend.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Co-founder}{August 2022 -- Present}
+      {QuasiPhi Project}{Warsaw, Poland}
+      \resumeItemListStart
+        \resumeItem{Co-founded and developed a machine learning startup that focuses on analysing time series data for patterns.}
+        \resumeItem{Implemented proprietary algorithms that were a major distinguishing factor of the product.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {RERE}{Warsaw, Poland}
+      {Bednarska Real Highschool}{September 2021 -- May 2022}
+      \resumeItemListStart
+        \resumeItem{Led the developement of a master-slave infrastructure for a distributed system of hardware radio stations communicating with a mother station.}
+        \resumeItem{Implemented Arduino and Adafruit Feather controllers communicating with a Raspberry Pi via radio-serial pipeline.}
+        \resumeItem{Optimized the data flow for transparent and efficient communication for over 20 stations.}
+        \resumeItem{Implemented a Python middleware for data processing and database communication.}
+        \resumeItem{Created a online dashboard allowing for real-time monitoring of every station.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Voluntary work}{Poland}
+      {Marek Kaminski Foundation}{2022 -- 2023}
+      \resumeItemListStart
+        \resumeItem{Took an active part in an initiative called 'Marsze Mocy', dedicated to raising awareness about the importance of mental health across the youth.}
+        \resumeItem{As a team, raised over 400,000 PLN to found a preventive-motivational LifePlan Academy courses.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {CTF Competitions}{2020-2022}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{Achieved 19th place in Poland's general ranking on ctftime.org.}
+        \resumeItem{Documented and shared write-ups for challenges on my blog and GitHub.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Education}
+    \resumeSubHeadingListStart
+      \resumeSubheading
+        {Polish-Japanese Academy of Information Technology}{Warsaw, Poland}
+        {Bachelor of Science in Computer Science}{2024 -- 2027}
+      \resumeSubheading
+        {Bednarska Real High School}{Warsaw, Poland}
+        {Computer Science Specialized Track, Mathematics Major, Physics Major}{2020 -- 2024}
+  \resumeSubHeadingListEnd
+
+
+\section{Technical Skills}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Languages}{: Java, Python, JavaScript, SQL, C, C++, Go, Bash} \\
+      \textbf{Frameworks}{: Spring, Hibernate, Django, React.js, Node.js, PyTorch, TensorFlow, MLX, Tailwind CSS} \\
+      \textbf{Tools}{: Git, Linux, Docker, GCP, debuggers and decompilers} \\
+      \textbf{Libraries}{: NumPy, Pandas, Matplotlib, Seaborn} \\
+    }}
+  \end{itemize}
+
+  \end{document}
+
